@@ -1,1 +1,1 @@
-# personal_website
+Create a simple personal website to get hired
