@@ -7,6 +7,16 @@ body {
     color: #333;
 }
 
+/* Container */
+.section {
+    max-width: 900px;
+    margin: 40px auto;  /* Centering the content */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Header */
 header {
     background: linear-gradient(135deg, #0073e6, #00c6ff);
@@ -15,23 +25,17 @@ header {
     padding: 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav ul li a {
@@ -45,47 +49,6 @@ nav ul li a:hover {
     color: #ffdd57;
 }
 
-/* Sections */
-.section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.section h2 {
-    color: #0073e6;
-    border-bottom: 3px solid #00c6ff;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-/* Projects */
-.project {
-    background: #f8f8f8;
-    padding: 15px;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    color: #005bb5;
-}
-
-/* Contact */
-#contact a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
 /* Footer */
 footer {
     text-align: center;
@@ -93,4 +56,12 @@ footer {
     background: #0073e6;
     color: white;
     margin-top: 20px;
+}
+
+/* Ensure text doesn't touch the edges on smaller screens */
+@media (max-width: 768px) {
+    .section {
+        margin: 20px; /* Adds space on the sides */
+        padding: 15px;
+    }
 }
